@@ -36,10 +36,12 @@ mainHeader.style.borderBottom='solid 4px black';
 //const addItem=document.getElementsByClassName('title');
 const addItem=document.querySelector('.title');
 console.log(addItem);
-addItem.innerHTML='<h1> Add Item</h1>';
+//addItem.innerHTML='<h1> Add Item</h1>';
 addItem.style.color='green'
+addItem.style.fontWeight='bold';
 
 // getElementByClass.......
+
  let items=document.getElementsByClassName('list-group-item');
  console.log(items);
  console.log(items[2]);
@@ -55,4 +57,18 @@ addItem.style.color='green'
  for(item of items){
      console.log("se",item);
      item.style.fontWeight='bold';
+
  }
+document.getElementById('by-class').textContent=`length of list for getElementByClassName is ${items.length}`
+
+ //getElementByTageName...
+ let li=document.getElementsByTagName('li');
+ console.log(li);
+ console.log(li[2]);
+ li[2].style.background='green';
+ for(liItem of li){
+     console.log("se",liItem);
+     liItem.style.fontWeight='bold';
+
+ }
+ document.getElementById('by-tag').textContent=`length of list for getElementByTagName is ${li.length}`
