@@ -38,3 +38,21 @@ const addItem=document.querySelector('.title');
 console.log(addItem);
 addItem.innerHTML='<h1> Add Item</h1>';
 addItem.style.color='green'
+
+// getElementByClass.......
+ let items=document.getElementsByClassName('list-group-item');
+ console.log(items);
+ console.log(items[2]);
+ items[2].style.background='green';
+
+ //it giver error...
+ //items.style.fontweight='bold';
+ 
+ // we need to apply loop because items is a htmla collection
+ // or similar to array but not array .. forEach() not work...
+ 
+ 
+ for(item of items){
+     console.log("se",item);
+     item.style.fontWeight='bold';
+ }
