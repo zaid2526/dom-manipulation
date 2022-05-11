@@ -41,7 +41,7 @@ addItem.style.color='green'
 addItem.style.fontWeight='bold';
 
 // getElementByClass.......
-
+/*
  let items=document.getElementsByClassName('list-group-item');
  console.log(items);
  console.log(items[2]);
@@ -60,8 +60,9 @@ addItem.style.fontWeight='bold';
 
  }
 document.getElementById('by-class').textContent=`length of list for getElementByClassName is ${items.length}`
-
+*/
  //getElementByTageName...
+ /*
  let li=document.getElementsByTagName('li');
  console.log(li);
  console.log(li[2]);
@@ -72,3 +73,36 @@ document.getElementById('by-class').textContent=`length of list for getElementBy
 
  }
  document.getElementById('by-tag').textContent=`length of list for getElementByTagName is ${li.length}`
+*/
+ //querySelector......
+ let header=document.querySelector('#main-header');
+ header.style.borderBottom='solid 4px blue';
+ 
+ let input=document.querySelector('input');
+ input.value="hello";
+ // there two input tag so, it pick the first element when queried
+ //element present more than one...
+ // for selecting other input tag element we just use css pseudo class
+
+ let submit=document.querySelector('input[type=submit');
+ submit.value='send';
+
+let itemFirst=document.querySelector('.list-group-item');
+itemFirst.style.background='orange';
+
+let secondItem=document.querySelector('li:nth-child(2)');
+//secondItem.style.background='green';
+let thirdItem=document.querySelector('.list-group-item:nth-child(3)')
+//thirdItem.style.display='none';
+
+let lastChild=document.querySelector('.list-group-item:last-child')
+
+//querySelectorAll
+let itemList=document.querySelectorAll('.list-group-item');
+itemList[1].style.color='green';
+let odd=document.querySelectorAll('li:nth-child(odd)');
+
+for(i=0;i<odd.length;i++){
+    odd[i].style.background='green';
+}
+ 
