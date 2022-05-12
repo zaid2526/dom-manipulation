@@ -75,6 +75,7 @@ document.getElementById('by-class').textContent=`length of list for getElementBy
  document.getElementById('by-tag').textContent=`length of list for getElementByTagName is ${li.length}`
 */
  //querySelector......
+ 
  let header=document.querySelector('#main-header');
  header.style.borderBottom='solid 4px blue';
  
