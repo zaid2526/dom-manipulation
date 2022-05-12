@@ -22,17 +22,33 @@
     </form>
     <h2 class="title">Items</h2>
     <ul id="items" class="list-group">
-      <li class="list-group-item">Item 1</li>
-      <li class="list-group-item">Item 2</li>
-      <li class="list-group-item">Item 3</li>
-      <li class="list-group-item">Item 4</li>
-      <!-- <li>item without className</li> -->
+      <li class="list-group-item">Item 1
+        <button class="btn btn-warning float-right edit">Edit</button>
+        <button class="btn btn-danger float-right mr-2 delete">x</button>
+      </li>
+      <li class="list-group-item">Item 2
+        <button class="btn btn-warning float-right edit">Edit</button>
+        <button  class="btn btn-danger float-right mr-2 delete">x</button>
+      </li>
+      <li class="list-group-item">Item 3
+        <button class="btn btn-warning float-right edit">Edit</button>
+        <button  class="btn btn-danger float-right mr-2 delete">x</button>
+      </li>
+      <li class="list-group-item">Item 4
+        <button class="btn btn-warning float-right edit">Edit</button>
+        <button class="btn btn-danger float-right mr-2 delete">x</button>
+      </li>
+      <!-- <li>item without className</li> 
       <p id="by-class"></p>
       <p id="by-tag"></p>
+      -->
     </ul>
-   </div>
+    <div id="box" style="width: 400px; height:200px; background:#f4f4f4 "></div>
+    </div>
   </div>
   <!-- <script src="dom.js"></script> -->
-  <script src="creatingNode.js"></script>
+  <!-- <script src="creatingNode.js"></script> -->
+  <!-- <script src="eventHandle.js"></script> -->
+  <script src="deleteEditFunctionality.js"></script>
 </body>
 </html>
