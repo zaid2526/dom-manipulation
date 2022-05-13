@@ -1,7 +1,5 @@
-var button=document.getElementById('btn');
-
-button.addEventListener('click',runEvent);
-
+var submitButton=document.getElementById('btn');
+submitButton.addEventListener('click',runEvent);
 function runEvent(e){
     console.log(e.target);
     var name=document.getElementById('name')
@@ -13,8 +11,6 @@ function runEvent(e){
     localStorage.setItem(`name${name.value}`,`${name.value}`)
     localStorage.setItem(`email${email.value}`,`${email.value}`)
     localStorage.setItem(`phone${phone.value}`,`${phone.value}`)
-
-
     //clear input field..
     name.value='';
     email.value='';

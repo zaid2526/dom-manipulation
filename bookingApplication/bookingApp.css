@@ -56,6 +56,10 @@ h1{
     font-size: x-large;
     font-family: 'Lucida Sans';
 }
+.bg-dark{
+    background: black;
+    color: blueviolet;
+}
 section{
     width: 400px;
     background-color: rgb(235, 229, 229);
@@ -63,8 +67,4 @@ section{
     margin-left: 10px;
     border: 2px solid #4CAF50;
     border-radius: 5px;
-}
-.bg-dark{
-    background: black;
-    color: blueviolet;
 }
