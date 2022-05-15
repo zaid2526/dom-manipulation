@@ -28,7 +28,6 @@ var lis=document.getElementsByClassName('items');
 window.onload = () => {
     let userDetails=JSON.parse(localStorage.getItem('userDtails'))
     console.log(userDetails);
-
     lis[0].innerHTML=userDetails.name;
     lis[1].innerHTML=userDetails.email;
     lis[2].innerHTML=userDetails.phone;
