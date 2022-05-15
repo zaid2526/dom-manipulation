@@ -4,7 +4,6 @@ var refButton=document.getElementById('refbtn');
 
 
 submitButton.addEventListener('click',runEvent);
-//refButton.addEventListener('click',getDetailEvent);
 
 function runEvent(e){
     console.log(e.target);
@@ -13,7 +12,6 @@ function runEvent(e){
         email:document.getElementById('email').value,
         phone:document.getElementById('phone').value,
     }
-    //let userDetailsSerialized=JSON.stringify(userDetails);
 
     console.log(userDetails);
     //object directly does not send to the browser.. it send into string formm
@@ -27,7 +25,6 @@ function runEvent(e){
     document.getElementById('phone').value='';
 }
 var lis=document.getElementsByClassName('items');
-console.log(window);
 window.onload = () => {
     let userDetails=JSON.parse(localStorage.getItem('userDtails'))
     console.log(userDetails);
