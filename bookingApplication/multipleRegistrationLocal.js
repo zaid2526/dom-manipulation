@@ -99,14 +99,8 @@ userList.addEventListener('click',(event)=>{
             let userId=li.textContent.split(" ");
 
             console.log(userId[1]);
-            //localStorage.removeItem(userId[1])
-            //ul.removeChild(li)
-            //let userDetails=JSON.parse(localStorage.getItem(userId[1]));
-            //console.log("user", userDetails)
-               // if(user.email===userId[1]){
-                  //  console.log("userid Match",delete user);
-                //}
-            
+            localStorage.removeItem(userId[1])
+            ul.removeChild(li)
             
         }else if(button.textContent=="edit"){
             console.log('edited......');
